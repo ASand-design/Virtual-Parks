@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">    
+    <script src="{% static 'js/script.js' %}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Main</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Welcome to Virtual Parks! !</p>
+        </div>
+        <div class="header2">
+            <h5>Why wait in line when you can ride ALL rides online!</h5>
+        </div>
+        <div class="disney">
+            <a href="/disney"><h2>Disney Parks</h2></a>
+        </div>
+        <div class="universal">
+            <a href="/universal"><h2>Universal Studios Parks</h2></a>
+        </div>
+        <div class="footer">
+            {% csrf_token %}
+            <a href="/main">Home |</a>
+            <a href="/about">About Virtual Parks |</a>
+            <a href="/disney">Disney |</a>
+            <a href="/universal">Universal |</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>

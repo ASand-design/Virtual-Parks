@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    /* outline: 1px solid red; */
+}
+.container{
+    width: auto;
+    height: auto;
+}
+.header{
+    width: 900px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+.disneyland{
+    width: auto;
+    height: 500px;
+    display: inline-block;
+    padding-left: 100px;
+}
+.california_adventure{
+    width: auto;
+    height: 500px;
+    display: inline-block;
+}
+.magic_kingdom{
+    width: auto;
+    height: 500px;
+    display: inline-block;
+}
+.animal_kingdom{
+    width: auto;
+    height: 500px;
+    display: inline-block;
+}
+.hollywood_studios{
+    width: auto;
+    height: 500px;
+    display: inline-block;
+}
+.epcot{
+    width: auto;
+    height: 500px;
+    display: inline-block;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:aliceblue;
+    text-align: center;
+ }

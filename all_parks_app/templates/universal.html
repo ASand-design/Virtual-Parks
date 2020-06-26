@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">    
+    <script src="{% static 'js/script.js' %}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      body {
+          background-image: url(https://vignette.wikia.nocookie.net/movinglogo/images/4/47/Universal_Pictures_2009-2012.jpg/revision/latest/scale-to-width-down/1000?cb=20180222201123);
+          height: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+    </style>
+    <title>Universal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Universal Studios Theme Parks</h1>
+        </div>
+        <div class="hollywood">
+            <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
+              Universal Studios Hollywood
+            </button>
+            <div class="dropdown-menu">
+              <h5 class="dropdown-header">Upper Lot</h5>
+              <a class="dropdown-item" href="https://youtu.be/0h6nInv4RY4">Harry Potter and the Forbidden Journey</a>
+              <a class="dropdown-item" href="https://youtu.be/irAmxLgUOh8">Studio Tour</a>
+              <a class="dropdown-item" href="https://youtu.be/xdsFdoUGIGc">Waterworld: A Live Sea War Spectacular</a>
+              <h5 class="dropdown-header">Lower Lot</h5>
+              <a class="dropdown-item" href="https://youtu.be/YoAG2-tberU">Jurassic World</a>
+              <a class="dropdown-item" href="https://youtu.be/jvCrgBsWP7g">Revenge of the Mummy: The Ride</a>
+              <a class="dropdown-item" href="https://youtu.be/vfjkPOz_Aq8">Transformers: The Ride 3D</a>
+            </div>
+        </div>
+        <div class="orlando">
+            <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
+              Universal Studios Orlando
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://youtu.be/TJXsl8PJnJc">Hagrid's Magical Creatures Motorbike Adventure</a>
+              <a class="dropdown-item" href="https://youtu.be/DJHfF2udZv8">Harry Potter and the Escape from Gringotts</a>
+              <a class="dropdown-item" href="https://youtu.be/HuQuN4arpvY">Hollywood Rip Ride Rockit</a>
+            </div>
+        </div>
+        <div class="islands">
+            <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
+                Islands of Adventure
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://youtu.be/n_GZCxD1Jvw">Skull Island: Reign of Kong</a>
+              <a class="dropdown-item" href="https://youtu.be/u16kKribb_4">Hogwarts Express</a>
+              <a class="dropdown-item" href="https://youtu.be/HZ8E8RhZJ7o">Ollivanders</a>
+            </div>
+        </div>
+        <div class="footer">
+            {% csrf_token %}
+            <a href="/main">Home |</a>
+            <a href="/about">About Virtual Parks |</a>
+            <a href="/disney">Disney |</a>
+            <a href="/universal">Universal |</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
