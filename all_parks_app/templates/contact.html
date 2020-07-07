@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/contact.css' %}">    
     <script src="{% static 'js/script.js' %}"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Contact Us</title>
 </head>
-<body>
+<body style = 'background-color: aliceblue;'>
     <div class="container">
         <div class="header">
-            <p>Contact Us</p>
+            <h2>Contact Us. . .</h2>
         </div>
         <div class="body">
-            <p> <label for="first_name">First Name:</label> 
-                <input type="text" id="first_name" name="first_name"></p>
-            <p> <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name"></p>
-            <p> <label for="email">Email:</label>
-                <input type="text" id="email" name="email"></p>
-            <h5>Select Park</h5>
-            <select name="Park">
-                <option value="disney">Disney</option>
-                <option value="universal">Universal</option>
-            </select>
-            <h5>How can we help ?</h5>
-            <p> <textarea name="description"></textarea></p>
-            <h5>Would you like to be contacted by email?</h5>
-                <label for="yes">Yes</label>
-                <input type="checkbox" id="yes" name="option" value="yes">
-                <label for="no">No</label>
-                <input type="checkbox" id="no" name="option" value="no">
-                <button type="button" class="btn btn-outline-primary">Submit</button>
+            <div class="col">
+                <form action="/contact" method="post">
+                    {% csrf_token %}
+                    <label for="first_name">First Name:</label> 
+                    <input type="text" id="first_name" name="first_name">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                    <h5>Select Park</h5>
+                    <select name="Park">
+                    <option value="disney">Disney</option>
+                    <option value="universal">Universal</option>
+                    </select>
+                    <h5>How can we help ?</h5>
+                    <p> <textarea name="description"></textarea></p>
+                    <h5>Would you like to be contacted by email?</h5>
+                    <label for="yes">Yes</label>
+                    <input type="checkbox" id="yes" name="option" value="yes">
+                    <label for="no">No</label>
+                    <input type="checkbox" id="no" name="option" value="no"><br>
+                    <button type="button" class="btn btn-outline-primary">Submit</button>
+                </form>
+            </div>
         </div>
         <div class="footer">
             {% csrf_token %}

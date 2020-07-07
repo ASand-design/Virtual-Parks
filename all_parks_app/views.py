@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
+from .models import *
+import bcrypt
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'login.html')
 
 def login(request):
     
@@ -13,7 +15,7 @@ def login(request):
         return redirect("/login")
     else:
         request.session['user_id'] = user.id
-        return redirect("/welcome")
+        return redirect("/main")
 
 def register(request):
     
@@ -29,19 +31,34 @@ def register(request):
                                     email=request.POST['email'],
                                     password=bcrypt.hashpw(request.POST['password'].encode(),bcrypt.gensalt()).decode())
         request.session['user_id'] = user.id
-        return redirect("/welcome")
+        return redirect("/main")
 
 def about(request):
-    return render(request, 'about.html')
+    context = {
+        'user_id':request.session['user_id']
+    }
+    return render(request, 'about.html', context)
 
 def disney(request):
-    return render(request, 'disney.html')
+    context = {
+        'user_id':request.session['user_id']
+    }
+    return render(request, 'disney.html', context)
 
 def universal(request):
-    return render(request, 'universal.html')
+    context = {
+        'user_id':request.session['user_id']
+    }
+    return render(request, 'universal.html', context)
 
 def contact(request):
-    return render(request, 'contact.html')
+    context = {
+        'user_id':request.session['user_id']
+    }
+    return render(request, 'contact.html', context)
 
 def main(request):
-    return render(request, 'main.html')
+    context = {
+        'user_id':request.session['user_id']
+    }
+    return render(request, 'main.html', context)
