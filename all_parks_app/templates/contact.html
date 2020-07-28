@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/contact.css' %}">    
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">    
     <script src="{% static 'js/script.js' %}"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Contact Us</title>
@@ -13,41 +14,41 @@
 <body style = 'background-color: aliceblue;'>
     <div class="container">
         <div class="header">
-            <h2>Contact Us. . .</h2>
+            <h1 class="text-info" style="font-size:70px;">Contact Us. . .</h1>
         </div>
         <div class="body">
             <div class="col">
                 <form action="/contact" method="post">
                     {% csrf_token %}
-                    <label for="first_name">First Name:</label> 
+                    <label for="first_name" class="text-info">First Name:</label> 
                     <input type="text" id="first_name" name="first_name">
-                    <label for="last_name">Last Name:</label>
+                    <label for="last_name" class="text-info">Last Name:</label>
                     <input type="text" id="last_name" name="last_name">
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email">
-                    <h5>Select Park</h5>
+                    <label for="email" class="text-info">Email:</label>
+                    <input type="text" id="email" name="email"><br>
+                    <h3 class="text-info">Select Park</h3><br>
                     <select name="Park">
-                    <option value="disney">Disney</option>
-                    <option value="universal">Universal</option>
-                    </select>
-                    <h5>How can we help ?</h5>
+                        <option value="disney">Disney</option>
+                        <option value="universal">Universal</option>
+                    </select><br>
+                    <h3 class="text-info">How can we help ?</h3><br>
                     <p> <textarea name="description"></textarea></p>
-                    <h5>Would you like to be contacted by email?</h5>
-                    <label for="yes">Yes</label>
+                    <h3 class="text-info">Would you like to be contacted by email?</h3><br>
+                    <label for="yes" class="text-info">Yes</label>
                     <input type="checkbox" id="yes" name="option" value="yes">
-                    <label for="no">No</label>
+                    <label for="no" class="text-info">No</label>
                     <input type="checkbox" id="no" name="option" value="no"><br>
-                    <button type="button" class="btn btn-outline-primary">Submit</button>
+                    <button type="button" class="btn btn-info btn-lg">Submit</button>
                 </form>
             </div>
         </div>
         <div class="footer">
             {% csrf_token %}
-            <a href="/main">Home |</a>
-            <a href="/about">About Virtual Parks |</a>
-            <a href="/disney">Disney |</a>
-            <a href="/universal">Universal |</a>
-            <a href="/contact">Contact Us</a>
+            <a href="/main" class="text-info">Home |</a>
+            <a href="/about" class="text-info">About Virtual Parks |</a>
+            <a href="/disney" class="text-info">Disney |</a>
+            <a href="/universal" class="text-info">Universal |</a>
+            <a href="/contact" class="text-info">Contact Us</a>
         </div>
     </div>  
 </body>

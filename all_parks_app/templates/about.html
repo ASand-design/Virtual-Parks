@@ -6,27 +6,31 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/about.css' %}">    
     <script src="{% static 'js/script.js' %}"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>About</title>
 </head>
 <body style = 'background-color: aliceblue;'>
     <div class="container">
         <div class="header">
-            <p>About Virtual Parks. . .</p>
+            <h1 class="text-info" style="font-size:65px;">About Virtual Parks. . .</h1>
         </div>
         <div class="body">
-            <p>Born in 2020, Virtual Parks is focused on providing amusement park rides 
-                directly from your viewing platform.  
-
+            <p class="text-info">  
+                To all who come to this happy place; welcome. Virtual Parks is your land. Here 
+                age relives fond memories of the past…and here youth may savor the challenge 
+                and promise of the future. Virtual Parks is dedicated to the ideals, the dreams 
+                and the hard facts that have created America…with the hope that it will be a 
+                source of joy and inspiration to all the world.
             </p>
         </div>
         <div class="footer">
             {% csrf_token %}
-            <a href="/main">Home |</a>
-            <a href="/about">About Virtual Parks |</a>
-            <a href="/disney">Disney |</a>
-            <a href="/universal">Universal |</a>
-            <a href="/contact">Contact Us</a>
+            <a href="/main" class="text-info">Home |</a>
+            <a href="/about" class="text-info">About Virtual Parks |</a>
+            <a href="/disney" class="text-info">Disney |</a>
+            <a href="/universal" class="text-info">Universal |</a>
+            <a href="/contact" class="text-info">Contact Us</a>
         </div>
     </div>
 </body>

@@ -12,6 +12,8 @@
     height: auto;
     text-align: center;
     color: white;
+    font-family: "Righteous";
+    text-shadow: 2px 2px 5px white;
     padding-left: 150px;
     padding-top: 100px;
 }
@@ -20,22 +22,27 @@
     height: 300px;
     display: inline-block;
     padding-left: 200px;
+    font-family: "Righteous";
 }
 .orlando{
     width: auto;
     height: 300px;
     display: inline-block;
+    font-family: "Righteous";
 }
 .islands{
     width: auto;
     height: 300px;
     display: inline-block;
+    font-family: "Righteous";
 }
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    font-family: "Righteous";
     background-color:white;
     text-align: center;
+    text-shadow: 2px 2px 5px coral;
  }

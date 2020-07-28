@@ -6,6 +6,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/universal.css' %}">    
     <script src="{% static 'js/script.js' %}"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -24,7 +25,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Universal Studios Theme Parks</h1>
+            <h1 style="font-size:50px;">Universal Studios Theme Parks</h1>
         </div>
         <div class="hollywood">
             <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
@@ -63,11 +64,11 @@
         </div>
         <div class="footer">
             {% csrf_token %}
-            <a href="/main">Home |</a>
-            <a href="/about">About Virtual Parks |</a>
-            <a href="/disney">Disney |</a>
-            <a href="/universal">Universal |</a>
-            <a href="/contact">Contact Us</a>
+            <a href="/main" class="text-info">Home |</a>
+            <a href="/about" class="text-info">About Virtual Parks |</a>
+            <a href="/disney" class="text-info">Disney |</a>
+            <a href="/universal" class="text-info">Universal |</a>
+            <a href="/contact" class="text-info">Contact Us</a>
         </div>
     </div>
 </body>

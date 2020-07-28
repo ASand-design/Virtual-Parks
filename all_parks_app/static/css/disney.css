@@ -11,7 +11,9 @@
     width: 900px;
     height: 200px;
     text-align: center;
+    font-family: "Righteous";
     color: white;
+    text-shadow: 2px 2px 5px white;
     padding-left: 200px;
     padding-top: 100px;
 }
@@ -19,31 +21,37 @@
     width: auto;
     height: 500px;
     display: inline-block;
+    font-family: "Righteous";
     padding-left: 100px;
 }
 .california_adventure{
     width: auto;
     height: 500px;
+    font-family: "Righteous";
     display: inline-block;
 }
 .magic_kingdom{
     width: auto;
     height: 500px;
+    font-family: "Righteous";
     display: inline-block;
 }
 .animal_kingdom{
     width: auto;
     height: 500px;
+    font-family: "Righteous";
     display: inline-block;
 }
 .hollywood_studios{
     width: auto;
     height: 500px;
+    font-family: "Righteous";
     display: inline-block;
 }
 .epcot{
     width: auto;
     height: 500px;
+    font-family: "Righteous";
     display: inline-block;
 }
 .footer {
@@ -51,6 +59,8 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    font-family: "Righteous";
     background-color:white;
     text-align: center;
+    text-shadow: 2px 2px 5px coral;
  }

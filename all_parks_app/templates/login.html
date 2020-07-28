@@ -12,6 +12,9 @@
 </head>
 <body style = 'background-color: aliceblue;'>
     <div id="container">
+        <h1 class="text-info" style="font-size:85px;" style="text-align:center;">Virtual Parks</h1>
+
+        <hr>
 
         {% if messages %}
         <div class="messages">
@@ -32,31 +35,31 @@
         {% endif %}
         <div class="row">
             <div class="col">
-                <h2>Register:</h2>
+                <h2 class="text-info" style="font-size:55px;">Register:</h2>
                 <form action="/register" method="post">
                     {% csrf_token %}
-                    <label for="first_name">First Name:</label>
+                    <label for="first_name" class="text-info">First Name:</label>
                     <input class="form-control" type="text" name="first_name">
-                    <label for="last_name">Last Name:</label>
+                    <label for="last_name" class="text-info">Last Name:</label>
                     <input class="form-control" type="text" name="last_name">
-                    <label for="email">Email:</label>
+                    <label for="email" class="text-info">Email:</label>
                     <input class="form-control" type="email" name="email">
-                    <label for="password">Password:</label>
+                    <label for="password" class="text-info">Password:</label>
                     <input class="form-control" type="password" name="password">
-                    <label for="password_confirm">Confirm Password:</label>
-                    <input class="form-control" type="password" name="password_confirm">
-                    <input type="submit" value="Register" class="btn btn-primary">
+                    <label for="password_confirm" class="text-info">Confirm Password:</label>
+                    <input class="form-control" type="password" name="password_confirm"><br>
+                    <input type="submit" value="Register" class="btn btn-info btn-block">
                 </form>
             </div>
             <div class="col">
-                <h2>Login:</h2>
+                <h2 class="text-info" style="font-size:55px;">Login:</h2>
                     <form action="/login" method="post">
                         {% csrf_token %}
-                        <label for="email">Email:</label>
+                        <label for="email" class="text-info">Email:</label>
                         <input class="form-control" type="email" name="email">
-                        <label for="password">Password:</label>
-                        <input class="form-control" type="password" name="password">
-                        <input type="submit" value="Login" class="btn btn-primary">
+                        <label for="password" class="text-info">Password:</label>
+                        <input class="form-control" type="password" name="password"><br>
+                        <input type="submit" value="Login" class="btn btn-info btn-block">
                     </form>
             </div>
         </div>

@@ -4,34 +4,55 @@
     /* outline: 1px solid red; */
 }
 .header{
-    width: 550px;
+    width: auto;
     height: 150px;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Righteous";
+    font-size-adjust: 100%;
+    text-shadow: 2px 2px 5px coral;
     text-align: center;
-    display: inline-block;
-    font-size: 250%;
     padding-top: 25px;
 }
 .header2{
-    width: 500px;
+    width: auto;
     height: 150px;
-    display: inline-block;
-    color: black;
+    font-family: "Righteous";
+    text-align: center;
+    padding-top: 50px;
+    text-shadow: 2px 2px 5px coral;
+}
+.header3{
+    width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    animation: blinker 1.5s linear infinite;
+    border-style: double;
+    border-color: red;
+    border-radius: 5px;
 }
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 .disney{
     width: 500px;
-    height: 600px;
+    height: 300px;
     display: inline-block;
+    font-family: "Righteous";
     text-align: center;
+    text-decoration: underline;
+    padding-top: 100px;
+    text-shadow: 2px 2px 5px coral;
 }
 .universal{
     width: 500px;
-    height: 600px;
+    height: 300px;
+    padding-left: 140px;
     display: inline-block;
+    text-decoration: underline;
+    font-family: "Righteous";
     text-align: center;
+    text-shadow: 2px 2px 5px coral;
 }
 .footer {
     position: fixed;
@@ -39,6 +60,7 @@
     bottom: 0;
     width: 100%;
     background-color:white;
-    color: black;
+    font-family: "Righteous";
     text-align: center;
+    text-shadow: 2px 2px 5px coral;
  }
