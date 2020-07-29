@@ -4,6 +4,7 @@
     font-family: "Righteous";
     text-align: center;
     text-shadow: 2px 2px 5px coral;
+    display: inline-block;
 }
 .body{
     width: 100%;

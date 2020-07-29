@@ -55,7 +55,9 @@ def contact(request):
     context = {
         'user_id':request.session['user_id']
     }
-    return render(request, 'contact.html', context)
+    print("Got Post Info....................")
+    print(request.POST)
+    return render(request,"contact.html")
 
 def main(request):
     context = {
