@@ -10,4 +10,5 @@ urlpatterns= [
     path('disney', views.disney, name='disney'),
     path('universal', views.universal, name='universal'),
     path('contact', views.contact, name='contact'),
+    path('show', views.contact)
 ]

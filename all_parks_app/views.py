@@ -10,9 +10,9 @@ def login(request):
     user, errors = User.objects.login_validate(request.POST)
 
     if errors:
-        for user,error in errors.items():
+        for key,error in errors.items():
             messages.error(request, error)
-        return redirect("/login")
+        return redirect("/")
     else:
         request.session['user_id'] = user.id
         return redirect("/main")
@@ -22,9 +22,9 @@ def register(request):
     errors = User.objects.register_validate(request.POST)
 
     if errors:
-        for user,error in errors.items():
+        for key,error in errors.items():
             messages.error(request, error)
-        return redirect("/login")
+        return redirect("/")
     else:
         user = User.objects.create(first_name=request.POST['first_name'], 
                                     last_name=request.POST['last_name'],
