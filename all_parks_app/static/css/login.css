@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    /* outline: 1px solid red; */
+}
+.container{
+    font-family: "Righteous";
+    text-shadow: 2px 2px 5px coral;
+}
